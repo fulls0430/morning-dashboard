@@ -278,7 +278,15 @@
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getDatabase, ref, set, get, onValue, push, remove } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
-import { firebaseConfig } from "./firebase-config.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyBO5KCGGWIyPPGF9eFStPjO7K9QuM9K9P4",
+  authDomain: "am5-dash-board.firebaseapp.com",
+  projectId: "am5-dash-board",
+  storageBucket: "am5-dash-board.firebasestorage.app",
+  messagingSenderId: "330841331775",
+  appId: "1:330841331775:web:576d3db41e477cf3f5008a",
+  databaseURL: "https://am5-dash-board-default-rtdb.firebaseio.com/"
+};
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
